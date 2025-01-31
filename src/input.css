@@ -1,0 +1,4 @@
+@import "tailwindcss";
+.background {
+    background-image: url(../images/living-room.jpg);
+}
