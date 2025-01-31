@@ -527,8 +527,17 @@
   .flex {
     display: flex;
   }
+  .h-fit {
+    height: fit-content;
+  }
+  .h-full {
+    height: 100%;
+  }
   .h-screen {
     height: 100vh;
+  }
+  .min-h-fit {
+    min-height: fit-content;
   }
   .w-20 {
     width: calc(var(--spacing) * 20);
@@ -536,17 +545,48 @@
   .w-auto {
     width: auto;
   }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
   }
   .w-screen {
     width: 100vw;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .items-center {
     align-items: center;
   }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
+  .justify-between {
+    justify-content: space-between;
+  }
+  .gap-x-2 {
+    column-gap: calc(var(--spacing) * 2);
+  }
+  .gap-x-5 {
+    column-gap: calc(var(--spacing) * 5);
+  }
+  .gap-y-5 {
+    row-gap: calc(var(--spacing) * 5);
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .bg-gray-300\/15 {
+    background-color: color-mix(in oklab, var(--color-gray-300) 15%, transparent);
+  }
+  .bg-gray-300\/20 {
+    background-color: color-mix(in oklab, var(--color-gray-300) 20%, transparent);
   }
   .bg-cover {
     background-size: cover;
@@ -560,14 +600,41 @@
   .text-center {
     text-align: center;
   }
-  .backdrop-blur-lg {
-    --tw-backdrop-blur: blur(var(--blur-lg));
+  .backdrop-blur-2xl {
+    --tw-backdrop-blur: blur(var(--blur-2xl));
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
 }
+* {
+  color: #ddd;
+}
 .background {
   background-image: url(../images/living-room.jpg);
+}
+.home > * {
+  padding: 20px;
+}
+.border {
+  border-radius: 30px;
+  border: 1px solid rgba(100, 100, 100, 0.862);
+}
+.barrier {
+  height: 100%;
+  width: 1px;
+  background-color: rgba(100, 100, 100, 0.862);
+  padding: 0;
+  margin: 0;
+}
+.header-item {
+  height: 100px;
+  width: 238px;
+}
+.home-nav {
+  margin-left: 20px;
+}
+.home-nav * {
+  font-size: 15px;
 }
 @keyframes spin {
   to {
@@ -594,6 +661,11 @@
     transform: none;
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-backdrop-blur {
   syntax: "*";
