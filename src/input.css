@@ -2,6 +2,10 @@
 * {
     color: #ddd;
 }
+html {
+    min-width: fit-content;
+    min-height: fit-content;
+}
 .background {
     background-image: url(../images/living-room.jpg);
 }
