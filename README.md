@@ -1,0 +1,1 @@
+Download all files and view ./src/index.html in the browser
