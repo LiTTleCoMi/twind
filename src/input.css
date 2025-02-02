@@ -15,19 +15,48 @@
     border: 1px solid rgba(100, 100, 100, 0.862);
 }
 .barrier {
-    height: 100%;
     width: 1px;
     background-color: rgba(100, 100, 100, 0.862);
     padding: 0;
     margin: 0;
 }
+.logo {
+    background-image: url(../images/netflix.png);
+    background-position: center;
+    background-size: cover;
+    min-width: 203px;
+    min-height: 88px;
+    max-width: 203px;
+    max-height: 88px;
+}
 .header-item {
     height: 100px;
-    width: 238px;
 }
 .home-nav {
     margin-left: 20px;
 }
 .home-nav * {
     font-size: 15px;
+}
+.home-nav-movie {
+    max-width: 220px;
+    max-height: 150px;
+    min-width: 220px;
+    min-height: 150px;
+    border-radius: 20px;
+}
+input:focus {
+    outline: none;
+}
+.svg {
+    width: 25px;
+}
+.pfp {
+    background-image: url(../images/profile.png);
+    background-position: center;
+    background-size: cover;
+    width: 39px;
+    height: 39px;
+    border: 2px solid rgb(229, 9, 20);
+    border-radius: 50%;
 }

@@ -6,32 +6,81 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-    <div class="background bg-cover bg-center h-screen w-screen text-center">
-        <div class="flex items-center h-screen w-auto mx-10 py-20 gap-x-5">
-            <div class="w-20 backdrop-blur-2xl bg-gray-300/15 h-fit border rounded-full">
-                sdf
+    <div class="background bg-cover bg-center h-fit w-full text-center">
+        <div class="flex items-center h-fit w-auto mx-10 py-20 gap-x-5">
+            <div class="w-fit backdrop-blur-2xl bg-gray-300/15 h-fit border rounded-full p-2 gap-y-3 flex flex-col">
+                <img src="../svg/play.svg" alt="play" class="svg">
+                <img src="../svg/play.svg" alt="play" class="svg">
+                <img src="../svg/play.svg" alt="play" class="svg">
+                <img src="../svg/play.svg" alt="play" class="svg">
+                <img src="../svg/play.svg" alt="play" class="svg">
+                <img src="../svg/play.svg" alt="play" class="svg">
             </div>
             <div class="w-full h-full flex overflow-hidden border home min-h-fit">
-                <div class="backdrop-blur-2xl bg-gray-300/15 h-full w-fit flex-col flex justify-between">
-                    <img src="../images/netflix.png" alt="netflix logo" class="header-item">
-                    <div class="flex flex-col gap-y-5" class="home-nav">
+                <div class="backdrop-blur-2xl bg-gray-300/15 h-full w-fit flex-col flex justify-between gap-y-4">
+                    <div class="logo"></div>
+                    <div class="flex flex-col gap-y-3" class="home-nav">
                         <div class="flex gap-x-2">
-                            <img src="../svg/play.svg" alt="play">
+                            <img src="../svg/play.svg" alt="play" class="svg">
                             <span>Browse</span>
                         </div>
                         <div class="flex gap-x-2">
-                            <img src="../svg/play.svg" alt="play">
+                            <img src="../svg/play.svg" alt="play" class="svg">
                             <span>Wishlist</span>
                         </div>
                         <div class="flex gap-x-2">
-                            <img src="../svg/play.svg" alt="play">
+                            <img src="../svg/play.svg" alt="play" class="svg">
                             <span>Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-y-5 items-start">
+                        <span>New Trailers &#128293;</span>
+                        <div class="home-nav-movie relative bg-[url('../images/movie-action.jpg')] bg-center bg-cover overflow-hidden flex flex-col justify-end">
+                            <div class="backdrop-blur-xl bg-gray-200/10 flex w-full justify-between py-2 px-5">
+                                <span>Shadow and Bone</span>
+                                <img src="../svg/play.svg" alt="play" class="svg">
+                            </div>
+                        </div>
+                        <div class="home-nav-movie relative bg-[url('../images/movie-action.jpg')] bg-center bg-cover overflow-hidden flex flex-col justify-end">
+                            <div class="backdrop-blur-2xl bg-gray-200/10 flex w-full justify-between py-2 px-5">
+                                <span>Shadow and Bone</span>
+                                <img src="../svg/play.svg" alt="play" class="svg">
+                            </div>
+                        </div>
+                        <div class="home-nav-movie relative bg-[url('../images/movie-action.jpg')] bg-center bg-cover overflow-hidden flex flex-col justify-end">
+                            <div class="backdrop-blur-2xl bg-gray-200/10 flex w-full justify-between py-2 px-5">
+                                <span>Shadow and Bone</span>
+                                <img src="../svg/play.svg" alt="play" class="svg">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="barrier"></div>
-                <div class="backdrop-blur-2xl bg-gray-300/20 h-full w-full">
-
+                <div class="backdrop-blur-2xl bg-gray-300/20 w-full p-5">
+                    <div class="flex h-[88px]">
+                        <div class="flex w-3/7 gap-x-[15%] items-center">
+                            <div class="flex justify-between gap-x-2">
+                                <img src="../svg/play.svg" alt="play" class="svg">
+                                <img src="../svg/play.svg" alt="play" class="svg">
+                            </div>
+                            <div class="flex gap-x-3 w-full bg-gray-300/10 px-4 py-3 rounded-full overflow-hidden h-fit">
+                                <img src="../svg/play.svg" alt="play" class="svg">
+                                <input type="text" placeholder="Search..." class="w-full">
+                            </div>
+                        </div>
+                        <div class="flex w-4/7 justify-end gap-x-4 items-center">
+                            <div class="p-2 rounded-full bg-gray-300/10 h-fit">
+                                <img src="../svg/play.svg" alt="play" class="svg">
+                            </div>
+                            <div class="py-2 px-5 rounded-full bg-gray-300/10 h-fit flex items-center gap-x-2 profile">
+                                <div class="pfp"></div>
+                                <div class="flex flex-col">
+                                    <h6>Samantha G.</h6>
+                                    <span>@Samantha</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
